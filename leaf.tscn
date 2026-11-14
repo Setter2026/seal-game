@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://fcqtrxrodyog"]
+
+[ext_resource type="Texture2D" uid="uid://c102hjef6qag" path="res://Screenshot 2026-11-14 113156.png" id="1_p3lty"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_emj1b"]
+radius = 9.337524
+
+[node name="Leaf" type="Area2D" unique_id=1252430534 groups=["Venice"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1426954036 groups=["Venice"]]
+position = Vector2(560, 175.00002)
+scale = Vector2(0.2794793, 0.29309356)
+texture = ExtResource("1_p3lty")
+offset = Vector2(66.72833, -11.088623)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1590875648]
+position = Vector2(579.00006, 172)
+scale = Vector2(-4.952127, -5.1200557)
+shape = SubResource("CircleShape2D_emj1b")

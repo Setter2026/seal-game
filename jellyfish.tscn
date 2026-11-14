@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dt80l48diovxr"]
+
+[ext_resource type="Script" uid="uid://d3ivvrdimudyh" path="res://jellyfish.gd" id="1_10puu"]
+[ext_resource type="Texture2D" uid="uid://ccs45qr8myfd4" path="res://image-removebg-preview (4).png" id="1_pbnkl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sw6k5"]
+radius = 39.0
+height = 112.0
+
+[node name="Jellyfish" type="Area2D" unique_id=886861076 groups=["Jellyfish"]]
+script = ExtResource("1_10puu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=162349779 groups=["Jellyfish"]]
+position = Vector2(217.50003, -65.25)
+scale = Vector2(0.21799989, 0.27699998)
+texture = ExtResource("1_pbnkl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=151988142 groups=["Jellyfish"]]
+position = Vector2(218, -64)
+shape = SubResource("CapsuleShape2D_sw6k5")

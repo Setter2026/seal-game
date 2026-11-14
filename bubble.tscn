@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d0s52rd5e1b2p"]
+
+[ext_resource type="Texture2D" uid="uid://c3sevpe1clev3" path="res://WhatsApp_Image_2026-11-14_at_2.17.46_PM-removebg-preview.png" id="1_n2mqj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h2yge"]
+radius = 46.043457
+
+[node name="Bubble" type="Area2D" unique_id=850323958 groups=["Bubbles"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=52286730 groups=["Bubbles"]]
+position = Vector2(-22.239605, 27.455046)
+scale = Vector2(0.25695843, 0.23817983)
+texture = ExtResource("1_n2mqj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1963984394 groups=["Bubbles"]]
+position = Vector2(-17, 28)
+shape = SubResource("CircleShape2D_h2yge")
